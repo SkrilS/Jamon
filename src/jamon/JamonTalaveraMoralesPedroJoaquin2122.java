@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package jamon;
 
 /**
- *
+ * Clase que realiza el registro, compra y venta de jamones en almacen
+ * 
  * @author portatil_profesorado
+ * @since 12/06/2021
+ * @version 1.0 , 12/06/2021
  */
+
+  
+
 public class JamonTalaveraMoralesPedroJoaquin2122 {
     
     private String categoria;
@@ -22,28 +24,20 @@ public class JamonTalaveraMoralesPedroJoaquin2122 {
     // Constructor con parámetro para iniciar todas las propiedades de la clase
     // jamon
     
+    /**
+     * 
+     * @param cat categoria del jamon
+     * @param precio
+     * @param stock 
+     */
+    
     public JamonTalaveraMoralesPedroJoaquin2122 (String cat, double precio, int stock)
     {
         this.categoria =cat;
         this.precio=precio;
         this.stock=stock;
     }
-   // Método para asignar la categoría del jamón
-    public void asignarCategoria(String cat)
-    {
-        setCategoria(cat);
-    }
-    // Método que me devuelve la categoría del jamón
-    public String obtenerCategoria()
-    {
-        return getCategoria();
-    }
-
-    // Método que me devuelve el stock de jamones disponible en cada momento
-     public int obtenerStock ()
-    {
-        return getStock();
-    }
+   
 
     /* Método para comprar coches. Modifica el stock.
      * Este método va a ser probado con Junit
